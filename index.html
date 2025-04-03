@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<style>
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0D1B2A; /* Midnight Blue */
+    color: #FFFFFF; /* White text */
+}
+header {
+    background-color: #FF007F; /* Neon Pink */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+.header-content h1 {
+    font-size: 2.5rem;
+}
+.profile-picture {
+    width: 25px;
+    height: 30px;
+    border-radius: 75%;
+    object-fit: cover;
+    position: absolute;
+    top: 75px;
+    left: 10px;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.section-content {
+    background-color: #fff;
+    color: #0D1B2A; /* Midnight Blue text */
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+.download-button {
+    background-color: #00D4FF; /* Cyan */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.download-button:hover {
+    background-color: #FF007F; /* Neon Pink hover effect */
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #FF007F; /* Neon Pink */
+    color: #fff;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-content">
+<img src="https://drive.google.com/file/d/1ah5zT53YBptnAGpRIHVVVKxmuQe8_jwZ/view?usp=drivesdk.jpg" alt="Your Profile Picture" class="profile-picture">
+<h1>immaculate vincy.v</h1>
+<p>STUDENT</p>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="#objective">OBJECTIVE</a></li>
+<li><a href="#education">EDUCATION</a></li>
+<li><a href="#skills">SKILLS</a></li>
+<li><a href="#projects">PROJECTS</a></li>
+<li><a href="#resume">RESUME</a></li>
+</ul>
+</nav>
+<section id="objective">
+<div class="section-content">
+<h2>OBJECTIVE</h2>
+<p>Enthusiastic and detail-oriented Computer Science student with a strong foundation in programming and problem-solving. Seeking opportunities to apply technical skills and gain hands-on experience in software development and related fields.
+</p>
+</div>
+</section>
+<section id="education">
+<div class="section-content">
+<h2>EDUCATION</h2>
+<p1>BSc. COMPUTER SCIENCE </p1>
+<br>Bishop appasamy college of arts and science</br>
+<br>Coimbatore, Tamil Nadu. </br>
+</div>
+</section>
+<section id="skills">
+<div class="section-content">
+<h2>SKILLS</h2>
+<ul>
+<li>Java</li>
+<li>Python</li>
+<li>Web Design</li>
+<li>Excel Sheet</li>
+</ul>
+</div>
+</section>
+<section id="projects">
+<div class="section-content">
+<h2>Projects</h2>
+<ul>
+<li><a href="#">Participated on SMART INDIA HACKATHON (AUGUST 2023 & 2024)</a></li>
+</ul>
+</div>
+</section>
+<section id="resume">
+<div class="section-content">
+<center>
+<h2>Resume</h2>
+<a href="https://drive.google.com/file/d/1ah5zT53YBptnAGpRIHVVVKxmuQe8_jwZ/view?usp=drivesdk.pdf" target="_blank" class="download-button">Download CV</a>
+</center>
+</div>
+</section>
+<footer>
+<p>&copy; 2025 immaculate vincy.v</p>
+</footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+</body>
+</html>
